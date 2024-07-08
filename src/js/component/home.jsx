@@ -7,7 +7,7 @@ const Home = () => {
 	let [red, setRed] = useState('border-danger')
 	let [green, setGreen] = useState('border-success')
 	let [yellow, setYellow] = useState('border-waring')
-	
+
 
 	function click(event) {
 
@@ -29,10 +29,10 @@ const Home = () => {
 	}
 
 	return (
-		<div className="d-flez flex-colum justify-content-text w-100 h-100v mx-auto bg-dark p-5 gap-2">
-			<button onClick={click} id="red" className={"p-5 rounded rounded-pill bg-danger "+ red}></button>
-			<button onClick={click} id="yellow" className={"p-5 rounded rounded-pill bg-warning "+ yellow}></button>
-			<button onClick={click} id="green" className={"p-5 rounded rounded-pill bg-success "+ green}></button>
+		<div className="d-flex flex-colum justify-content-center w-100 h-100vh mx-auto bg-dark p-5 gap-2">
+			<button onClick={click} id="red" className={"p-5 rounded rounded-pill bg-danger " + red}></button>
+			<button onClick={click} id="yellow" className={"p-5 rounded rounded-pill bg-warning " + yellow}></button>
+			<button onClick={click} id="green" className={"p-5 rounded rounded-pill bg-success " + green}></button>
 		</div>
 	);
 };
