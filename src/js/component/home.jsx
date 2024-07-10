@@ -29,10 +29,14 @@ const Home = () => {
 	}
 
 	return (
-		<div className="d-flex flex-colum justify-content-center w-100 h-100vh mx-auto bg-dark p-5 gap-2">
-			<button onClick={click} id="red" className={"p-5 rounded rounded-pill bg-danger " + red}></button>
-			<button onClick={click} id="yellow" className={"p-5 rounded rounded-pill bg-warning " + yellow}></button>
-			<button onClick={click} id="green" className={"p-5 rounded rounded-pill bg-success " + green}></button>
+		<div className="d-flex div-principal m-5 bg-dark p-5 row gap-2">
+
+			<div className="col-4 no-responsivo rounded-3 m-auto border align-items-center bg-secondary p-5">
+				<button onClick={click} id="red" className={"p-5 d-flex align-items-start rounded rounded-pill bg-danger " + red}></button>
+				<button onClick={click} id="yellow" className={"p-5 align-items-center rounded rounded-pill bg-warning " + yellow}></button>
+				<button onClick={click} id="green" className={"p-5 d-flex align-items-end rounded rounded-pill bg-success " + green}></button>
+			</div>
+
 		</div>
 	);
 };
